@@ -15,7 +15,9 @@
      if(e.which === 13 )
      {
          var text = $(this).val();
+         $(this).val("");
          $("ul").append("<li><span><i class='fas fa-trash'></i> </span> " + text + "</li>")
+        
      };
  })
  $(".fa-pencil-alt").click(function(){
